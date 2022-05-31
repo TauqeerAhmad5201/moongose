@@ -23,6 +23,7 @@ async function main() {
   silence.speak();
   silence.save();
 
+  // concept of await async
   const kittens = await Kitten.find();
   console.log(kittens);
 }
