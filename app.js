@@ -52,7 +52,7 @@ async function main() {
   const datafind = await Kitten.find({ _id : "62941771affe10bf448ce739"});
   console.log(datafind)
 }
-
+//express method to listen at certain port
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
