@@ -36,8 +36,9 @@ async function main() {
       : "I don't have a name";
     console.log(greeting);
   };
-  const Kitten = mongoose.model('Kitten', kittySchema); //model
+  const Kitten = mongoose.model('Kitten', kittySchema); //generating model of our schema
   // mongoose.model(modelName, schema):
+
   app.post('/sign', (req, res) => {
     const silence = new Kitten({name : { first: req.body.name, last : req.body.password }});
     console.log(silence.name); //
