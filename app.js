@@ -21,6 +21,8 @@ async function main() {
   await mongoose.connect('mongodb+srv://tauqeerahmad:mantasha786@practicecluster.kqrhg.mongodb.net/?retryWrites=true&w=majority');
 
   console.log('We are connected!');
+
+  //Schema of our database
   const kittySchema = new mongoose.Schema({
     name: {
       first : String,
